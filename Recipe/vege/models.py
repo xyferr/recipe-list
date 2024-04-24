@@ -8,3 +8,5 @@ class Recipe(models.Model):
     recipe_description=models.TextField()
     recipe_image=models.ImageField(upload_to='recipe_images/')
     
+    def __str__(self):
+        return self.recipe_name
